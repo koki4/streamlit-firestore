@@ -2,7 +2,7 @@ import toml
 
 output_file = ".streamlit/secrets.toml"
 
-with open("./serviceAccountKey.json") as json_file:
+with open("./gcs_key.json") as json_file:
     json_text = json_file.read()
 
 config = {"textkey": json_text}
